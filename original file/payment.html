@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://shop.ezpretty.com.tw/ezpretty/shop/payment -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>168微商城</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./168微商城_files/bootstrap.4.1.3.min.css">
+    <link rel="stylesheet" href="./168微商城_files/font-awesome.5.3.1.min-old.css">
+    <script src="./168微商城_files/jquery.2.2.4.min.js" type="text/javascript"></script>
+</head>
+
+<body style="" class="">
+    <link rel="stylesheet" href="./168微商城_files/jquery-ui.css">
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/microsoft jhenghei.css);
+
+        body {
+            background-color: #f3f0f0;
+            font-size: 1em;
+            line-height: 1.925em;
+            letter-spacing: 1px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family: Montserrat, Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", sans-serif;
+            color: #767676;
+            font-weight: 400;
+        }
+
+        .container {
+            padding-right: 0px;
+            padding-left: 0px;
+            /* margin:auto; */
+            /* margin-left:0px; */
+            background-color: #fff;
+        }
+
+        /*控制框*/
+        .form-control,
+        .ui-widget input,
+        select {
+            font-family: Montserrat, Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", sans-serif;
+            font-size: 1.3rem;
+        }
+
+        .ui-widget {
+            font-family: Montserrat, Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", 微軟正黑體, "Microsoft JhengHei", sans-serif;
+        }
+
+        #search_group .form-control {
+            font-size: 1rem;
+        }
+
+        /*text位置*/
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        /*float位置*/
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        /*margin-top*/
+        .s-margin-top {
+            margin-top: 30px;
+        }
+
+        .input-group>.custom-select:not(:last-child),
+        .input-group>.form-control:not(:last-child) {
+            border-radius: 0;
+        }
+
+        .top_title {
+            /*    width: 100%; */
+            height: 50px;
+            top: 0;
+            margin-top: 0px;
+            background-color: #64745a;
+            overflow: hidden;
+            background-color: #D580AA;
+            /*position: fixed;*/
+        }
+
+        .title-nav ul {
+            margin-bottom: 12px !important;
+        }
+
+        .title-nav li {
+            width: 20%;
+            float: left;
+            text-align: center;
+            color: white;
+        }
+
+        .title-nav li a {
+            color: white;
+        }
+
+        .nav {
+            background-color: #FFF;
+        }
+
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border-color: #64745a #64745a #FFF #64745a;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid #64745a;
+        }
+
+        .nav-link {
+            display: block;
+            padding: .5rem .8rem;
+        }
+
+        .nav-tabs .nav-link {
+            border-radius: 0;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            border-color: #64745a #64745a #fff;
+            border-top: 4px solid #64745a;
+        }
+
+        .tab-content>.active {
+            padding: 0 8px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        #search_group {
+            padding: 5px;
+        }
+
+        .title {}
+
+        /*.title span { */
+        /*    margin-left: 30px; */
+        /*    color: white; */
+        /*    float: center; */
+        /*    vertical-align: middle; */
+        /*} */
+        .title .subject {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 50px;
+            color: #FFF;
+            vertical-align: middle;
+            display: block;
+            color: #FFFFFF;
+
+        }
+
+        .title .subject .f_right {
+            float: right;
+            margin-right: 5px;
+        }
+
+        .title .item {
+            margin-left: 5px;
+            font-size: 18px;
+            color: white;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*btn*/
+        .btn-primary {
+            color: #fff;
+            background-color: #64745a;
+            border-color: #64745a;
+            outline: none;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active {
+            color: #fff;
+            background-color: #485441;
+            border-color: #485441;
+            outline: none;
+        }
+
+        .btn-primary.focus,
+        .btn-primary:focus {
+            box-shadow: 0 0 0 .2rem rgba(100, 116, 90, .5);
+            outline: none;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #a57755;
+            border-color: #a57755;
+        }
+
+        .btn-success:hover {
+            color: #fff;
+            background-color: #855f43;
+            border-color: #855f43;
+        }
+
+        .btn-success.focus,
+        .btn-success:focus {
+            box-shadow: 0 0 0 .2rem rgba(133, 95, 67, .5);
+        }
+
+        .btn-default {
+            background: none;
+            outline: none;
+            border-radius: 3px;
+        }
+
+        .cart_badge {
+            color: #ffffff;
+            background-color: #a57755;
+        }
+
+        .option a {
+            font-weight: 600;
+            padding: 5px;
+            font-size: 15px;
+            /*color: #2B2B80;
+		font-family: 'Noto Sans TC';*/
+
+            color: #EABFEA;
+            font-size: 14px;
+
+        }
+
+        .fixtop {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 0;
+            /*text-align: center;*/
+            height: 80px;
+        }
+
+        .fixtop-height {
+            height: 80px;
+        }
+
+        .option .active {
+            border-bottom: 2px #a57755 solid;
+
+        }
+
+        .ui-accordion .ui-accordion-content {
+            padding: 1em;
+        }
+
+        .form-check {
+            margin-bottom: 1em;
+        }
+
+        /* 商品詳細的頂標 */
+        .prev_page {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 25px;
+            color: white;
+            align-items: center;
+            line-height: 50px;
+            display: inline-block;
+            width: 50px;
+            position: absolute;
+        }
+
+        /* 要買幾個此商品 */
+        .buy_count,
+        #s_spec {
+            width: 60px;
+            font-size: 14px;
+            border: solid 1px #979185;
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 5px;
+            position: relative;
+            /*top:-1px;*/
+            /*left:-5px;*/
+            border-radius: 3px;
+        }
+
+        .formsubmit {
+            text-align: right;
+        }
+
+        .ui-accordion .ui-accordion-header {
+            border: 1px solid #cebfa8;
+            background: #efebe5;
+        }
+
+        .ui-accordion .ui-state-active,
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active,
+        a.ui-button:active,
+        .ui-button:active,
+        .ui-button.ui-state-active:hover {
+            border: 1px solid #a57755;
+            background-color: #a57755;
+            color: black;
+            outline: none;
+        }
+
+        .ui-icon {
+            background-image: url('http://download.jqueryui.com/themeroller/images/ui-icons_black_256x240.png') !important;
+        }
+
+        .search,
+        .nav-fill {
+            box-shadow: 0 2px 2px 0 rgba(175, 175, 175, .5);
+        }
+
+        .search_block {
+            margin: 0px;
+            background-color: #ee4d2d;
+        }
+
+        .search_block .input-group>.input-group-append>.btn {
+            color: #FFF;
+            border-radius: 0;
+            border: 1px solid #ee4d2d;
+            background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+            outline: none;
+        }
+
+        /* 商品詳細的上半部 */
+        .good_info_up {}
+
+        .good_info_img {
+            max-width: 720px;
+            margin: 0 auto;
+
+        }
+
+        .good_info_img img {
+
+            width: 100%;
+        }
+
+        .buy_count_btn {
+            color: white;
+            width: 38px;
+            margin-top: 5px;
+            text-align: center;
+            line-height: 38px;
+            height: 38px;
+            display: inline-block;
+            background-color: #979185;
+            position: relative;
+            /*border: 1px solid #979185;*/
+            border-radius: 3px;
+        }
+
+        #amount {
+            position: relative;
+            padding: 5px 8px;
+        }
+
+        #amount .t {
+            display: inline-block;
+            width: 40px;
+        }
+
+        #amount .control {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .buybar {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background: #ee4d2d;
+            z-index: 100;
+            padding: 0;
+            max-width: 720px;
+        }
+
+        .paybar {
+            /*position: fixed;*/
+            bottom: 0;
+            /*height: 50px;*/
+            width: 100%;
+            /*background: #ee4d2d;*/
+            z-index: 100;
+            padding: 0;
+            max-width: 720px;
+            text-align: center;
+        }
+
+        #price,
+        #spec {
+            text-align: left;
+            padding: 5px 8px;
+        }
+
+        #price del {
+            font-size: 1em;
+            color: #333;
+        }
+
+        #price .sale-price {
+            font-size: 1.3em;
+            display: inline-block;
+            color: #b72d3a;
+            margin-left: 6px;
+            font-weight: bold;
+        }
+
+        #put_to_cart {
+            height: 100%;
+            width: 50%;
+            font-size: 18px;
+            float: left;
+            border-radius: 0px;
+            outline: none;
+            background: #D580AA;
+            border: solid 1px #D580AA;
+        }
+
+        .buy-button {
+            height: 100%;
+            width: 50%;
+            font-size: 18px;
+            float: left;
+            background: #ee4d2d;
+        }
+
+        .btn-disable {
+            background: #6c757d;
+        }
+
+        #good_name h1 {
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #a57755;
+            margin: 0;
+            padding: 0;
+            word-break: break-all;
+        }
+
+        #good_name {
+            padding: 8px;
+        }
+
+        #payment {
+            height: 100%;
+            width: 50%;
+            font-size: 18px;
+            color: #FFF;
+            text-align: center;
+            display: inline-block;
+            outline: none;
+            /*line-height: 50px;*/
+            background: #D580AA;
+            border: solid 1px #D580AA;
+        }
+
+        #cart_payment,
+        #submit_order,
+        .records_btn {
+            border-radius: 3px;
+            width: 90%;
+            border: 0px solid;
+            outline: none;
+            background: #D580AA;
+            border: solid 1px #D580AA;
+        }
+
+        .good_info_mid {
+            text-align: right;
+            background-color: #edf1f1;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .good_info_down {
+            color: black;
+            margin-top: 10px;
+            padding: 5px 8px;
+        }
+
+        .good_info_down a {
+            color: black;
+        }
+
+        .good_info_down iframe {
+            width: 100%;
+            min-height: 350px;
+            border: none;
+        }
+
+        .good_info_down p {
+            text-align: justify;
+        }
+
+        .tab-content {
+            overflow: auto;
+            /*height: 300px;*/
+            padding-top: 15px;
+        }
+
+        .goods_list {
+            padding-top: 50px;
+            overflow: auto;
+            background: #efebe5;
+            /*max-height: 670px;*/
+        }
+
+        .goods_list_row {
+
+            padding-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .goods_list_row:nth-child(1) {
+            padding-top: 15px;
+        }
+
+        .goods_list_row:nth-last-child(1) {
+            padding-bottom: 15px;
+        }
+
+        .cart_list {
+            overflow: auto;
+            padding-top: 15px;
+        }
+
+        .cart_list.payment {
+            padding-top: 0;
+        }
+
+        .cart_list hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .cart_prod_record {
+            padding: 5px 0px;
+            margin-top: 5px;
+            margin-right: 0px;
+            /* display: initial; */
+        }
+
+        .cart_prod_record span {
+            margin-left: 5px;
+            vertical-align: middle;
+            /*display: inline-block;*/
+            /*display:inline*/
+        }
+
+        .cart_prod_record .name {
+            padding: 10px 10px;
+            word-wrap: break-word;
+            vertical-align: middle;
+            /*font-weight:600;*/
+            display: block;
+            text-align: justify;
+            line-height: 1.3em;
+        }
+
+        .cart_prod_record .count {
+            text-align: center;
+            color: #2f9c2f;
+            background: #efe9e9;
+            width: 8%;
+        }
+
+        .cart_prod_record .price {
+            display: inline-block;
+            word-wrap: break-word;
+            font-weight: bold;
+            text-align: right;
+            color: #b72d3a;
+            font-size: 15pt;
+            /*width: 80px;*/
+        }
+
+        .red {
+            color: #b72d3a;
+        }
+
+        .cart_prod_record .remove {
+            display: inline-block;
+            color: #979185;
+            margin-left: 5px;
+            line-height: 40px;
+            float: right;
+            width: 8%;
+            font-size: 22px;
+        }
+
+        .cart_prod_record .buy_count_btn {
+            color: white;
+            width: 38px;
+            margin-top: 5px;
+            text-align: center;
+            line-height: 38px;
+            height: 38px;
+            display: inline-block;
+            background-color: #979185;
+            border-radius: 3px;
+        }
+
+        .img-thumbnail {
+            padding: 0px;
+            background-color: #fff;
+            border: 0px;
+            border-radius: 0px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .cart_prod_record img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .order_info {
+            margin-top: 10px;
+            min-height: 530px;
+        }
+
+        .record_list {
+            background: #eae9e9;
+            margin-top: 15px;
+            overflow: auto;
+        }
+
+        .record_list .order-info {
+            padding-top: 6px;
+        }
+
+        .record_list .good_card {
+            padding: 0;
+            width: auto;
+            background: #FFF;
+            margin: 10px;
+        }
+
+        .record_list .good_card a {
+            color: #767676;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+        .record_list .good_card .cover-image-wrapper {
+            width: 30%;
+            position: absolute;
+            background: white;
+            display: inline-block;
+            max-height: 100%;
+            right: 0;
+        }
+
+        .record_list .good_card .cover-image-wrapper:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+
+        .record_list .good_card .conver-image {
+            /*object-fit: cover; */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: 6px;
+        }
+
+        .record_list .detail table {
+            width: 70%;
+        }
+
+        .record_list td.item {
+
+            width: 80px;
+            padding: 2px 6px;
+            height: auto;
+            background: #979185;
+            color: #FFF;
+            font-size: 13px;
+            border-bottom: 1px solid #efefef;
+            text-align: right;
+        }
+
+        .record_list td.text {
+            border-bottom: 1px solid #efefef;
+            font-size: 13px;
+            padding-left: 5px;
+            line-height: 20px;
+        }
+
+        .record_list .good_card .conver-image img {
+            background: white;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /*max-height: 100%;*/
+            /*max-width: 100%;
+        resize: both;
+        overflow: auto; */
+        }
+
+        .good_card {
+            /* padding: .1875rem;
+	   margin: 10px;*/
+        }
+
+        .good_card:nth-child(odd) {
+            padding: 8px 0px 10px 15px;
+        }
+
+        .good_card:nth-child(even) {
+            padding: 8px 15px 10px 15px;
+        }
+
+        .good_box {
+            box-shadow: 0 2px 2px 0 rgba(175, 175, 175, .5);
+            border: 1px #f3f3f3 solid;
+        }
+
+        .good_card a {
+            color: #a57755;
+            text-decoration: none;
+        }
+
+        .good_card .cover-image-wrapper {
+            width: 100%;
+            position: relative;
+            background: white;
+            /*border-top-right-radius: 10px;
+        border-top-left-radius: 10px;*/
+        }
+
+        .good_card .price {}
+
+        .good_card .views {
+            background: white;
+            display: block;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #979185;
+            /* border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;*/
+        }
+
+        .good_card .views i {
+            font-size: 14px;
+        }
+
+        .good_card .cover-image-wrapper:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+
+        .good_card .conver-image {
+            /*object-fit: cover; */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /*border-top-right-radius: 10px;
+        border-top-left-radius: 10px;*/
+        }
+
+        .good_card .conver-image img {
+            background: white;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /*max-height: 100%;*/
+            /*max-width: 100%;
+        resize: both;
+        overflow: auto; */
+        }
+
+        .good_card .name {
+            padding: 10px;
+            display: block;
+            float: left;
+            width: 100%;
+            font-size: .95rem;
+            font-weight: 600;
+            height: 60px;
+            over-flow: hidden;
+            line-height: 17px;
+        }
+
+        .good_card .sale_tag {
+            margin-top: .25rem;
+            margin-left: -.1875rem;
+            font-size: .6875rem;
+            flex: 0 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            z-index: 2;
+            align-items: center;
+            background-color: #ee4d2d;
+            border-radius: .125rem;
+            height: 1.4rem;
+            color: #fff;
+            padding: .125rem .1875rem;
+        }
+
+        .good_card .sale_tag::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            border: .13125rem solid transparent;
+            border-bottom-color: #a92d05;
+            transform: rotate(45deg);
+            left: .0625rem;
+            bottom: -.125rem;
+
+        }
+
+        .good_card .vendor {
+            background: white;
+            display: block;
+            padding-left: 20px;
+        }
+
+        .good_card .price {
+            color: #b72d3a;
+            background: white;
+            display: block;
+            padding-left: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0px;
+        }
+
+        .good_card .price s {
+            color: #979185;
+            font-size: 10px;
+        }
+
+        .good_card .price span {
+            text-decoration: none;
+            margin: 0px 3px;
+            color: #979185;
+            font-size: 10px;
+        }
+
+        .payment_info {
+            overflow: auto;
+            height: 200px;
+            border-width: 1px;
+            border-style: solid;
+            padding: 3px;
+            border-color: #e6dcdc;
+        }
+
+        .product_info {
+
+            display: block;
+            position: relative;
+            margin-bottom: 50px;
+            background: #FFF;
+            overflow: hidden;
+        }
+
+        .footer-nav li {
+            padding-top: 15px;
+        }
+
+        .footer-nav li a {
+            padding-top: 15px;
+        }
+
+        .row_bottom {
+            position: absolute;
+            width: 100%;
+            max-width: 540px;
+            bottom: 55px;
+            padding-bottom: 2px;
+        }
+
+        .row_fixed {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 540px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            padding: 8px 0;
+        }
+
+        .container_cart {
+            padding-top: 88px;
+            padding-bottom: 55px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container_cart .cart_list {
+            padding-top: 0;
+            padding-bottom: 52px;
+        }
+
+        .top_fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 540px;
+            z-index: 1;
+        }
+
+        .top_fixed .nav {
+            padding-bottom: 5px;
+        }
+
+        .cart_name {
+            background-color: transparent;
+            padding-left: 0;
+            display: block;
+            margin-left: 0 !important;
+            margin-bottom: 2px;
+        }
+
+        .cart_price {
+            color: red;
+            font-weight: bold;
+            display: block;
+            margin-left: 0 !important;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .cart_left {
+            margin-left: 20px;
+        }
+
+        .cart_right {
+            margin-left: 10px;
+        }
+
+        .cart_num {
+            font-size: 0;
+            margin: 0 !important;
+        }
+
+        .cart_num .cart_numLeft {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: #fff;
+            border: 1px solid #619804;
+            border-right: none;
+            margin-left: 0;
+        }
+
+        .cart_num .cart_numCenter {
+            width: 60px;
+            height: 40px;
+            display: inline-block;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #619804;
+            margin-left: 0;
+        }
+
+        .cart_num .cart_numRight {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            margin-left: 0;
+            background-color: #619804;
+        }
+
+        .cart_remove {
+            display: block;
+            width: 140px;
+            height: 34px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #619804;
+            color: #fff;
+            margin: 10px 0 0 0 !important;
+        }
+
+        .cart_prod_record .cart_img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .pay_top {
+            padding-top: 10px;
+        }
+
+        /*設定頁*/
+        .setting .list-group-item {
+            background-color: #efebe5;
+        }
+
+
+        @media (min-width:992px) {
+            .container {
+                width: 750px;
+            }
+
+            .good_info_img {
+                max-width: 750px;
+            }
+
+            .buybar {
+                max-width: 750px;
+            }
+        }
+
+        @media (min-width: 320px) {
+            .good_card:nth-child(odd) {
+                padding: 4px 0px 10px 10px;
+            }
+
+            .good_card:nth-child(even) {
+                padding: 4px 10px 10px 10px;
+            }
+
+            .good_card .name {
+                height: 75px;
+            }
+        }
+
+        @media (min-width: 375px) {
+            .good_card .name {
+                height: 60px;
+                padding: 8px;
+            }
+        }
+
+        @media (min-width: 425px) {
+            .cart_remove {
+                display: inline-block;
+                margin: 0 0 0 8px !important;
+                height: 40px;
+                line-height: 38px;
+            }
+
+            .good_card:nth-child(odd) {
+                padding: 4px 0px 10px 10px;
+            }
+
+            .good_card:nth-child(even) {
+                padding: 4px 10px 10px 10px;
+            }
+        }
+
+        @media (min-width: 540px) {
+            .top_fixed {
+                left: 50%;
+                margin-left: -270px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+
+            .good_info_img {
+                max-width: 540px;
+            }
+
+            .buybar {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                width: 750px;
+
+            }
+
+
+        }
+    </style>
+    <div class="fixtop">
+        <div class="container top_title">
+            <div class="title">
+                <span class="subject prev_page">
+                    <a href="https://shop.ezpretty.com.tw/ezpretty/shop/goods">
+                        <img src="./168微商城_files/20200211134019.webp" class="subject prev_page"
+                            style="background-color: white;margin: 5px 0px 5px 10px; inline-size: -webkit-fill-available;">
+                    </a>
+                </span>
+                <span class="subject" style="margin-left: 45px;">
+                    168微商城
+                    <span class="f_right"><button type="button" class="btn btn-default" style="font-size: 1.2rem;"
+                            alt="成為經銷人" onclick="if (!window.__cfRLUnblockHandlers) return false; show_partner();"><i
+                                class="fas fa-user"></i></button></span>
+                </span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function show_partner() {
+                //Element\ezpretty\footer_menu
+                $("#partner_dialog").modal('show');
+            }
+        </script>
+        <ul class="container nav nav-fill option">
+            <li class="nav-item">
+                <a class="nav-link " href="https://shop.ezpretty.com.tw/ezpretty/shop/goods"><span
+                        style="javascript:void(0)">商品</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="https://shop.ezpretty.com.tw/ezpretty/shop/cart">購物車&nbsp;<span
+                        id="cart_prod_num" class="badge badge-light cart_badge">3</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="https://shop.ezpretty.com.tw/ezpretty/shop/payment">付款</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="https://shop.ezpretty.com.tw/ezpretty/shop/records">購買記錄</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="https://shop.ezpretty.com.tw/ezpretty/shop/setting">設定</a>
+            </li>
+        </ul>
+    </div>
+    <div class="fixtop-height"></div>
+    <div class="container">
+        <div class="cart_list payment" id="cart_list"></div>
+        <div class="col-12 text-center s-margin-top" id="order_total_money">本訂單共 3 項商品<div class="col-12">實體商品滿額 1,000
+                免運費</div>
+            <div class="col-12">訂單總金額為 <font class="red"><b>$ 1,100</b></font>
+            </div>
+            <div class="col-12">訂單總使用紅利為 <font class="red"><b>$ 299</b></font>
+            </div>
+        </div>
+        <div class="row" id="payment_result"
+            style="margin-left: 0px; margin-right: 0px; margin-top: 30px; display: none"></div>
+        <form class="form-horizontal col-12" id="order_form">
+            <div class="order_info" id="order_info">
+                <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+                    <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-header-active ui-state-active ui-accordion-icons"
+                        role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true"
+                        tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>訂購人</h3>
+                    <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active"
+                        id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" style="display: block; height: auto;"
+                        aria-hidden="false">
+                        <div class="form-group">
+                            <input type="text" name="from_name" id="from_name" class="form-control" maxlength="10"
+                                placeholder="訂購人姓名" value="HPO" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="from_phone" id="from_phone" class="form-control" placeholder="電話"
+                                value="">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sd-6">
+                                <select name="from_city" id="from_city" class="form-control">
+                                    <option value="" selected="">縣市</option>
+                                    <option value="Australian Capital Territory">Australian Capital Territory</option>
+                                    <option value="New South Wales">New South Wales</option>
+                                    <option value="Northern Territory">Northern Territory</option>
+                                    <option value="Queensland">Queensland</option>
+                                    <option value="South Australia">South Australia</option>
+                                    <option value="Tasmania">Tasmania</option>
+                                    <option value="Victoria">Victoria</option>
+                                    <option value="Western Australia">Western Australia</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sd-6">
+                                <select name="from_area" id="from_area" class="form-control">
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="from_address" id="from_address" class="form-control"
+                                placeholder="地址" value="">
+                        </div>
+                    </div>
+                    <h3 id="accordion_header2"
+                        class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+                        role="tab" aria-controls="ui-id-3" aria-selected="false" aria-expanded="false" tabindex="-1">
+                        <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>收件人</h3>
+                    <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-3"
+                        aria-labelledby="accordion_header2" role="tabpanel" aria-hidden="true"
+                        style="display: none; height: auto;">
+                        <input type="hidden" name="shop_take_goods" id="shop_take_goods" value="1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="same_as_from">
+                            <label class="form-check-label" for="same_as_from">同訂購人資料</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="to_name" id="to_name" class="form-control" maxlength="10"
+                                placeholder="收件人姓名" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="to_phone" id="to_phone" class="form-control" placeholder="電話"
+                                value="">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="take_good_method" id="take_good_method_1"
+                                value="1"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_take_good_method();"
+                                checked="">
+                            <label class="form-check-label" for="take_good_method_1">宅配</label>
+                        </div>
+                        <div class="form-check form-check-inline nopay_money">
+                            <input class="form-check-input" type="radio" name="take_good_method" id="take_good_method_2"
+                                value="2"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_take_good_method();">
+                            <label class="form-check-label" for="take_good_method_2">超商取貨付款</label>
+                        </div>
+                        <div id="take_good_method_block_1">
+                            <div class="form-row">
+                                <div class="form-group col-sd-6">
+                                    <select name="to_city" id="to_city" class="form-control">
+                                        <option value="" selected="">縣市</option>
+                                        <option value="Australian Capital Territory">Australian Capital Territory
+                                        </option>
+                                        <option value="New South Wales">New South Wales</option>
+                                        <option value="Northern Territory">Northern Territory</option>
+                                        <option value="Queensland">Queensland</option>
+                                        <option value="South Australia">South Australia</option>
+                                        <option value="Tasmania">Tasmania</option>
+                                        <option value="Victoria">Victoria</option>
+                                        <option value="Western Australia">Western Australia</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sd-6">
+                                    <select name="to_area" id="to_area" class="form-control">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="to_address" id="to_address" class="form-control"
+                                    placeholder="地址" value="">
+                            </div>
+
+                        </div>
+                        <div id="take_good_method_block_2" style="display: none;">
+                            <div class="form-row">
+                                請選擇:
+                                <a href="javascript:void(0);"
+                                    onclick="if (!window.__cfRLUnblockHandlers) return false; select_store(1)"><img
+                                        src="./168微商城_files/711.png" width="50px" height="50px"></a>
+                                <a href="javascript:void(0);"
+                                    onclick="if (!window.__cfRLUnblockHandlers) return false; select_store(2)"><img
+                                        src="./168微商城_files/familymart.png" width="50px" height="50px"></a>
+                            </div>
+                            <div class="form-group">
+                                門市代碼:<input class="form-control" type="text" name="to_store_no" id="to_store_no"
+                                    readonly="true">
+                                門市名稱:<input class="form-control" type="text" name="to_store_name" id="to_store_name"
+                                    readonly="true">
+                                <input type="hidden" name="CargoFlag" id="CargoFlag" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons"
+                        role="tab" id="ui-id-4" aria-controls="ui-id-5" aria-selected="false" aria-expanded="false"
+                        tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>發票與付款
+                    </h3>
+                    <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-5"
+                        aria-labelledby="ui-id-4" role="tabpanel" aria-hidden="true"
+                        style="display: none; height: auto;">
+                        <div class="alert alert-warning" id="payment_alert" role="alert" style="display: none"></div>
+                        <div id="invoice">
+                            <div id="invoice_block" style="display: none;">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="invoice_type" id="invoice_type_2"
+                                        value="2" checked="checked">
+                                    <label class="form-check-label" for="invoice_type_2">個人發票</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="invoice_type" id="invoice_type_3"
+                                        value="3">
+                                    <label class="form-check-label" for="invoice_type_3">公司發票</label>
+                                </div>
+                                <div class="form-group" id="tax_title_field" style="display: none">
+                                    <input type="text" name="tax_title" id="tax_title" class="form-control"
+                                        placeholder="發票抬頭">
+                                </div>
+                                <div class="form-group" id="tax_id_field" style="display: none">
+                                    <input type="text" name="tax_id" id="tax_id" class="form-control"
+                                        placeholder="統一編號">
+                                </div>
+                                <span
+                                    style="font-size: 12px; display:inline-block">*依統一發票使用辦法規定，發票一經開立不得任意更改或改開發票；發票將寄至訂購人地址。</span>
+                                <hr>
+                            </div>
+                            <i class="far fa-file-alt" style="float: right;font-size: 23px;"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; chg_invoice_block();"></i>
+                            <div id="pay_method_block" class="nopay_money">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pay_method_id"
+                                        id="shop_pay_method_1" value="1"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_pay_method();"
+                                        checked="">
+                                    <label class="form-check-label" for="shop_pay_method_1">信用卡</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pay_method_id"
+                                        id="shop_pay_method_2" value="2"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_pay_method();">
+                                    <label class="form-check-label" for="shop_pay_method_2">匯款</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pay_method_id"
+                                        id="shop_pay_method_3" value="3"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_pay_method();">
+                                    <label class="form-check-label" for="shop_pay_method_3">貨到付款</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pay_method_id"
+                                        id="shop_pay_method_4" value="4"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_pay_method();">
+                                    <label class="form-check-label" for="shop_pay_method_4">超商取貨付款</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="pay_method_id"
+                                        id="shop_pay_method_5" value="5"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; chkshop_pay_method();">
+                                    <label class="form-check-label" for="shop_pay_method_5">Line Pay</label>
+                                </div>
+                            </div>
+                            <div class="form-check form-check-inline" style="" id="pay_bonus">
+                                <input class="form-check-input" type="checkbox" name="shop_pay_method_bonus"
+                                    id="shop_pay_method_bonus" checked="" disabled="true">
+                                <label class="form-check-label" for="shop_pay_method_bonus">紅利金</label>
+                            </div>
+                            <input type="hidden" name="shop_pay_method_creditcard" id="shop_pay_method_creditcard"
+                                value="1">
+                            <input type="hidden" name="shop_pay_method_atm" id="shop_pay_method_atm" value="1">
+                            <input type="hidden" name="shop_pay_atm_return_5" id="shop_pay_atm_return_5" value="1">
+                            <div class="nopay_money" style="" id="shop_pay_method_creditcard_content">
+                                <div class="form-group">
+                                    <label for="service_type_id"><span style="color:#f00">*</span> 卡號</label><br>
+                                    <input type="tel" class="form-control card-no" tabindex="1" id="card_no1"
+                                        name="card_no1" minlength="4" maxlength="4" required="true"
+                                        style="width:75px;display:inline-block" value="">-
+                                    <input type="tel" class="form-control card-no" tabindex="2" id="card_no2"
+                                        name="card_no2" minlength="4" maxlength="4" required="true"
+                                        style="width:75px;display:inline-block" value="">-
+                                    <input type="tel" class="form-control card-no" tabindex="3" id="card_no3"
+                                        name="card_no3" minlength="4" maxlength="4" required="true"
+                                        style="width:75px;display:inline-block" value="">-
+                                    <input type="tel" class="form-control card-no" tabindex="4" id="card_no4"
+                                        name="card_no4" minlength="4" maxlength="4" required="true"
+                                        style="width:75px;display:inline-block" value="">
+                                </div>
+                                <div class="form-group" style="height:61px">
+                                    <label><span style="color:#f00">*</span>有效年月</label>
+                                    <br>
+                                    <select class="form-control" tabindex="5" name="card_month" required="true"
+                                        style="width:110px;display:inline-block">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select> /
+                                    <select class="form-control" name="card_year" required="true"
+                                        style="width:110px;display:inline-block">
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                        <option>2031</option>
+                                        <option>2032</option>
+                                        <option>2033</option>
+                                        <option>2034</option>
+                                        <option>2035</option>
+                                        <option>2036</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label><span style="color:#f00">*</span>卡片背面末三碼</label>
+                                    <input type="tel" class="form-control" name="card_back_3d" id="card_back_3d"
+                                        minlength="3" maxlength="3" required="true" style="width:90px">
+                                </div>
+
+                            </div>
+                            <div style="display: none;margin-left: 8px;" id="shop_pay_method_atm_content">
+                                <div class="row align-items-center" style="margin-left: 1px;">
+                                    <div class="col-xs-3">
+                                        匯款資訊 </div>
+                                    <div class="col-xs-3">&nbsp;</div>
+                                    <div class="col-xs-3">
+                                        <input type="text" name="transfer_5" id="transfer_5" class="form-control"
+                                            style="display:inline-block;width:120px;" placeholder="已匯款後5碼"
+                                            maxlength="5">
+                                    </div>
+                                </div>
+                                <div class="row s-margin-top">
+                                    <div class="col-sm-12">
+                                        <label>BSB: 014010<br>
+                                            ACC: 12345678</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div style="display: none;margin-left: 8px;" id="shop_pay_method_cash_delivery_content">
+                                <h5>當收到產品時，才付款給送貨員。</h5>
+                            </div>
+                            <div style="display: none;margin-left: 8px;" id="shop_stort_cash_delivery_content">
+                                <h5>超商取貨付款</h5>
+                            </div>
+                            <label>介紹人</label>
+                            <input type="hidden" name="introductor_cvms_store_id" id="introductor_cvms_store_id">
+                            <input type="hidden" name="introductor_cvms_designer_id" id="introductor_cvms_designer_id">
+                            <span style="font-size: 14pt;"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; trash_introductor()"><i
+                                    class="fas fa-trash-alt"></i></span>
+                            <input type="text" class="form-control" name="introductor_cvms_designer_name"
+                                id="introductor_cvms_designer_name"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; select_introductor()"
+                                readonly="true">
+                            <hr>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label>備註</label>
+                                    <input type="text" name="memo" id="memo" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-check formsubmit text-center">
+                                        <input type="checkbox" id="confirm_order" value="1" checked="">&nbsp;<span
+                                            id="show_agreement">同意使用規範</span>
+                                        <div class="s-margin-top">
+                                            <button type="button" class="btn btn-success"
+                                                id="submit_order">確認訂購</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal fade" id="hook_modal" tabindex="-1" role="dialog" aria-labelledby="agreementTitle"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-12 text-center s-margin-top" id="fbwebhook"
+                        style="margin-left: 0px; margin-right: 0px; margin-top: 20%;">
+                        <div id="qrContent"><img src="./168微商城_files/chart" alt=""></div>
+                        <center><a style="font-size: 18pt;"
+                                href="https://www.ezpretty.com.tw/ezpretty/messenger/agreePage/0/769">點此與FB授權連動</a>
+                        </center>
+                        說明：授權連動後，可收到最新的FB推播訊息
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="agreement_modal" tabindex="-1" role="dialog" aria-labelledby="agreementTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agreementTitle">使用規範</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    1. 需先線上繳費或是匯款之後才會出貨.
+                    <br>2. 七天之後才會送出發票 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loadingModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="margin: 0 auto; text-align: center;">
+                        <h3 id="loadingMessage">訂單處理中請稍後.....</h3>
+                        <img src="./168微商城_files/loading-110.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="introductor_modal" tabindex="-1" role="dialog" aria-labelledby="introductorTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="introductorTitle">介紹人</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="dropdownMenu">
+                        <ul>
+                            <li class="btn jq-clickBtn">預約科技髮廊 ＞
+                                <ul class="nav nav-tabs dropdownList jq-dropdown">
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;173&#39;,&#39;173&#39;)">
+                                        &nbsp;&nbsp;&nbsp;173</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;15277&#39;,&#39;連 設計師&#39;)">
+                                        &nbsp;&nbsp;&nbsp;連 設計師</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;197&#39;,&#39;許馨桂julie&#39;)">
+                                        &nbsp;&nbsp;&nbsp;許馨桂julie</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;19603&#39;,&#39;HarryDesigner&#39;)">
+                                        &nbsp;&nbsp;&nbsp;HarryDesigner</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;21287&#39;,&#39;公用帳號&#39;)">
+                                        &nbsp;&nbsp;&nbsp;公用帳號</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;21370&#39;,&#39;Darren&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Darren</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;22373&#39;,&#39;王燕寶&#39;)">
+                                        &nbsp;&nbsp;&nbsp;王燕寶</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;21461&#39;,&#39;測試員工&#39;)">
+                                        &nbsp;&nbsp;&nbsp;測試員工</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;17600&#39;,&#39;Nisa&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Nisa</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;21696&#39;,&#39;Ada&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Ada</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;19271&#39;,&#39;謝依璇_紅篆&#39;)">
+                                        &nbsp;&nbsp;&nbsp;謝依璇_紅篆</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;16375&#39;,&#39;Peggy&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Peggy</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;13837&#39;,&#39;9 韋嘉絜&#39;)">
+                                        &nbsp;&nbsp;&nbsp;9 韋嘉絜</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;21641&#39;,&#39;11&#39;)">
+                                        &nbsp;&nbsp;&nbsp;11</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;19250&#39;,&#39;施采吟_綺篆&#39;)">
+                                        &nbsp;&nbsp;&nbsp;施采吟_綺篆</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;16323&#39;,&#39;Didi&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Didi</li>
+                                    <li style="text-align: left;color: blue;"
+                                        onclick="if (!window.__cfRLUnblockHandlers) return false; click_introductor(&#39;868&#39;,&#39;10233&#39;,&#39;Rainey&#39;)">
+                                        &nbsp;&nbsp;&nbsp;Rainey</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="partner_dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><span
+                            id="auth_word_title">想成為產品經銷人獲得分潤嗎?<br>填妥您的資料,我們將會盡快跟您聯絡</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" style="display:none;" id="partner_form_alert" role="alert"></div>
+                    <div class="alert alert-success" style="display:none;" id="partner_form_success" role="alert"></div>
+                    <form id="auth_form">
+                        <div class="form-group" id="name_field">
+                            <label>姓名</label>
+                            <input type="text" name="partner_name" class="form-control" id="partner_name"
+                                placeholder="姓名 (Name)">
+                        </div>
+                        <div class="form-group">
+                            <label>電話</label>
+                            <input type="text" name="partner_phone" class="form-control" id="partner_phone"
+                                placeholder="手機號碼 (Mobile Number)">
+                        </div>
+                        <div class="form-group" id="email_field">
+                            <label>Email</label>
+                            <input type="text" name="partner_email" class="form-control" id="partner_email"
+                                placeholder="電子信箱 (Email)">
+                        </div>
+                        <div class="form-group">
+                            <label>備註</label>
+                            <textarea class="form-control" name="partner_comment" id="partner_comment"></textarea>
+                        </div>
+                        <button type="button" class="btn col-12 btn-primary"
+                            onclick="if (!window.__cfRLUnblockHandlers) return false; send_partner();">送出</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function send_partner() {
+            $("#partner_form_alert").html('').hide();
+
+            var name = $("#partner_name").val();
+            var phone = $("#partner_phone").val();
+            var email = $("#partner_email").val();
+            var comment = $("#partner_comment").val();
+
+            var url = '/ezpretty/shop/sendPartner/';
+
+            var myreg =
+                /^[^\[\]\(\)\\<>:;,@.]+[^\[\]\(\)\\<>:;,@]*@[a-z0-9A-Z]+(([.]?[a-z0-9A-Z]+)*[-]*)*[.]([a-z0-9A-Z]+[-]*)+$/g;
+
+            var msg = '';
+            if (name.length < 1) {
+                $("#partner_form_alert").html("請輸入姓名").show();
+                return false;
+            }
+            if (phone.length < 1) {
+                $("#partner_form_alert").html("請輸入電話").show();
+                return false;
+            }
+            if (email.length < 1 || !myreg.test(email)) {
+                $("#partner_form_alert").html("請輸入正確的Email").show();
+                return false;
+            }
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    comment: comment,
+                },
+                success: function (data) {
+                    if (data.status == 0) {
+                        $("#partner_form_alert").html(data.message).show();
+                    } else {
+                        $("#partner_form_success").html(data.message).show();
+                        setTimeout(function () {
+                            $('#partner_dialog').modal('hide');
+                        }, 1500);
+                    }
+                }
+            });
+        }
+    </script>
+    <div id="messageModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="margin: 0 auto; text-align: center;">
+                        <h4 id="message"></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #FFFFFF !important;
+        }
+
+        .ui-accordion .ui-state-active {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .dropdownList {
+            display: none;
+
+            li {
+                display: flex;
+                /*justify-content: center;*/
+                /*align-items: center;*/
+                flex-direction: column;
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+    </style>
+    <script src="./168微商城_files/city.js" type="text/javascript"></script>
+    <script src="./168微商城_files/jquery.cookie.js" type="text/javascript"></script>
+    <script src="./168微商城_files/jquery-ui.js" type="text/javascript"></script>
+    <script src="./168微商城_files/pusher.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").accordion();
+            $(".ui-accordion-content").css("height", "auto");
+            $("#ui-id-2").css("display", "block");
+
+            $('.jq-clickBtn').click(function (e) {
+                e.preventDefault();
+                $('.jq-clickBtn').toggleClass('active');
+                $('.jq-dropdown').slideToggle();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        // 一進來要刪掉，永遠要存最新
+        localStorage.removeItem("prod_info");
+        var total_cost_calculate = 0;
+
+        var coupon_sn_encode = '';
+        var coupon_price = 0;
+        var coupon_discount = 0;
+
+        function chkcoupon() {
+            coupon_sn_encode = '';
+            coupon_price = 0;
+            coupon_discount = 0;
+            cacluate_total_sum();
+            $.ajax({
+                url: '/ezpretty/shop/check_coupon/',
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    sn_encode: $('#coupon_sn_encode').val(),
+                    total_cost_calculate: total_cost_calculate,
+                },
+                success: function (data) {
+                    if (data.success) {
+                        coupon_sn_encode = $('#coupon_sn_encode').val();
+                        coupon_price = data.coupon_price;
+                        coupon_discount = data.coupon_discount;
+                        cacluate_total_sum();
+                    } else {
+                        $("#message").html(data.messages);
+                        $("#messageModal").modal('show');
+                    }
+                }
+            });
+        }
+
+        function select_introductor() {
+            console.log(
+                '[{"id":868,"name":"\u9810\u7d04\u79d1\u6280\u9aee\u5eca","designers":{"173":"173","15277":"\u9023 \u8a2d\u8a08\u5e2b","197":"\u8a31\u99a8\u6842julie","19603":"HarryDesigner","21287":"\u516c\u7528\u5e33\u865f","21370":"Darren","22373":"\u738b\u71d5\u5bf6","21461":"\u6e2c\u8a66\u54e1\u5de5","17600":"Nisa","21696":"Ada","19271":"\u8b1d\u4f9d\u7487_\u7d05\u7bc6","16375":"Peggy","13837":"9 \u97cb\u5609\u7d5c","21641":"11","19250":"\u65bd\u91c7\u541f_\u7dba\u7bc6","16323":"Didi","10233":"Rainey"}}]'
+                );
+            $("#introductor_modal").modal('show');
+        }
+
+        function click_introductor(store_id, designer_id, designer_name) {
+            $("#introductor_cvms_store_id").val(store_id);
+            $("#introductor_cvms_designer_id").val(designer_id);
+            $("#introductor_cvms_designer_name").val(designer_name);
+            $("#introductor_modal").modal('hide');
+        }
+
+        function trash_introductor() {
+            $("#introductor_cvms_store_id").val('');
+            $("#introductor_cvms_designer_id").val('');
+            $("#introductor_cvms_designer_name").val('');
+        }
+
+        function focusNextElement() {
+            //add all elements we want to include in our selection
+            var focussableElements =
+                'a:not([disabled]), button:not([disabled]), input[type=text]:not([disabled]), [tabindex]:not([disabled]):not([tabindex="-1"])';
+            if (document.activeElement && document.activeElement.form) {
+                var focussable = Array.prototype.filter.call(document.activeElement.form.querySelectorAll(
+                        focussableElements),
+                    function (element) {
+                        //check for visibility while always include the current activeElement
+                        return element.offsetWidth > 0 || element.offsetHeight > 0 || element === document
+                            .activeElement
+                    });
+                var index = focussable.indexOf(document.activeElement);
+                if (index > -1) {
+                    var nextElement = focussable[index + 1] || focussable[0];
+                    nextElement.focus();
+                }
+            }
+        }
+
+        function update_cart_num(pid = 0, type = null) {
+            local_cart = JSON.parse(localStorage.getItem("cart"));
+            if (local_cart) {
+                var g_size = (local_cart != null && 'g' in local_cart) ? Object.keys(local_cart['g']).length : 0;
+                var t_size = (local_cart != null && 't' in local_cart) ? Object.keys(local_cart['t']).length : 0;
+                $("#cart_prod_num").html(g_size + t_size);
+            } else {
+                $("#cart_prod_num").html(0);
+            }
+            cacluate_total_sum();
+        }
+
+        function cacluate_total_sum() {
+            total_cost_calculate = 0;
+            total_cost_bonus_fee = 0;
+            local_cart = JSON.parse(localStorage.getItem("cart"));
+
+            var g_size = (local_cart != null && 'g' in local_cart) ? Object.keys(local_cart['g']).length : 0;
+            var t_size = (local_cart != null && 't' in local_cart) ? Object.keys(local_cart['t']).length : 0;
+
+            if (local_cart == null || (Object.keys(local_cart['g']).length + Object.keys(local_cart['t']).length) < 1) {
+                $("#order_total_money").html(
+                    '本訂單共 0 項商品<div class="col-12">總計 <font class="red"><b>$ 0</b></font></div>');
+            } else {
+                total_cost = [];
+                total_bonus_fee = [];
+                prod_info = JSON.parse(localStorage.getItem("prod_info"));
+
+                $.each(local_cart, function (type, type_items) {
+                    total_cost[type] = 0;
+                    total_bonus_fee[type] = 0;
+                    $.each(type_items, function (pid, cnt) {
+                        total_cost[type] += prod_info[type][pid].price * cnt;
+                        total_bonus_fee[type] += prod_info[type][pid].bonus_fee * cnt;
+                    });
+                    total_cost_calculate += total_cost[type];
+                    total_cost_bonus_fee += total_bonus_fee[type];
+                });
+
+                if (total_cost_calculate <= 0) {
+                    // $('#confirm_bonus').hide();
+                    $('.nopay_money').hide();
+                }
+
+                var shipping_amount = 1000;
+                var shipping_fee = 80;
+                if (total_cost['g'] == 0 || localStorage.getItem('all_tickets') == 'true') {
+                    shipping_fee_wording = '，票券商品 免運費<br>';
+                } else if (total_cost['g'] < shipping_amount) {
+                    shipping_fee_wording = '，運費: ' + formatMoney(shipping_fee, 0) + '<br>';
+                    total_cost_calculate += shipping_fee;
+                } else {
+                    shipping_fee_wording = '<div class="col-12">實體商品滿額 1,000 免運費</div>';
+                }
+                if (coupon_sn_encode != '' && coupon_discount != 0) {
+                    total_cost_calculate -= coupon_discount;
+                }
+
+                var tempStr = '本訂單共 ' + (g_size + t_size) + ' 項商品';
+                tempStr += shipping_fee_wording;
+                tempStr += '<div class="col-12">訂單總金額為 <font class="red"><b>$ ' + (formatMoney(total_cost_calculate,
+                    0)) + '</b></font></div>';
+                if (total_cost_bonus_fee) {
+                    tempStr += '<div class="col-12">訂單總使用紅利為 <font class="red"><b>$ ' + (formatMoney(
+                        total_cost_bonus_fee, 0)) + '</b></font></div>';
+                    $("#pay_bonus").show();
+                }
+                $("#order_total_money").html(tempStr);
+            }
+        }
+
+        function formatMoney(n, c, d, t) {
+            var c = isNaN(c = Math.abs(c)) ? 2 : c,
+                d = d == undefined ? "." : d,
+                t = t == undefined ? "," : t,
+                s = n < 0 ? "-" : "",
+                i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+                j = (j = i.length) > 3 ? j % 3 : 0;
+
+            return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math
+                .abs(n - i).toFixed(c).slice(2) : "");
+        };
+
+        function browser(ua) {
+            if (ua.match(/\bFB[\w_]+\/(Messenger|MESSENGER)/)) {
+                return 'facebookMessenger';
+            } else if (ua.match(/\bLine\//i)) {
+                return 'line';
+            } else if (ua.match(/\bFB[\w_]+\//)) {
+                return 'facebook';
+            } else if (ua.match(/\bMicroMessenger\//i)) {
+                return 'wechat';
+            } else if (ua.match(/\bInstagram/i)) {
+                return 'instagram';
+            } else {
+                return 'other';
+            }
+        }
+
+        function chkshop_pay_method() {
+            $('#shop_pay_method_creditcard_content').hide();
+            $('#shop_pay_method_atm_content').hide();
+            $('#shop_pay_method_cash_delivery_content').hide();
+            $('#shop_stort_cash_delivery_content').hide();
+
+            if ($('[name=pay_method_id]:checked').val() == 1) {
+                $('#shop_pay_method_creditcard_content').show();
+            } else if ($('[name=pay_method_id]:checked').val() == 2) {
+                $('#shop_pay_method_atm_content').show();
+            } else if ($('[name=pay_method_id]:checked').val() == 3) {
+                $('#shop_pay_method_cash_delivery_content').show();
+            } else if ($('[name=pay_method_id]:checked').val() == 4) {
+                if ($('[name=take_good_method]:checked').val() != 2) {
+                    $("#shop_pay_method_4").prop("checked", false);
+                    $("#payment_alert").html('請先填寫收件取貨門市!').show();
+                } else {
+                    $("#payment_alert").hide();
+                    $('#shop_stort_cash_delivery_content').show();
+                }
+            }
+        }
+
+        function chkshop_take_good_method() {
+            $('#take_good_method_block_1').hide();
+            $('#take_good_method_block_2').hide();
+
+            if ($('[name=take_good_method]:checked').val() == 1) {
+                $("#shop_pay_method_1").prop('disabled', false);
+                $("#shop_pay_method_2").prop('disabled', false);
+                $("#shop_pay_method_3").prop('disabled', false);
+                $("#shop_pay_method_4").prop('disabled', false);
+                $("#shop_pay_method_5").prop('disabled', false);
+                $('#take_good_method_block_1').show();
+
+                $('#shop_pay_method_1').trigger('click');
+            } else if ($('[name=take_good_method]:checked').val() == 2) {
+                $('#take_good_method_block_2').show();
+                $('#shop_stort_cash_delivery_content').show();
+
+                $("#shop_pay_method_1").prop('disabled', true);
+                $("#shop_pay_method_2").prop('disabled', true);
+                $("#shop_pay_method_3").prop('disabled', true);
+                $("#shop_pay_method_5").prop('disabled', true);
+
+                $("#shop_pay_method_4").prop("checked", true);
+                chkshop_pay_method();
+            }
+            $("#payment_alert").hide();
+        }
+
+        function chg_invoice_block() {
+            if ($("#invoice_block").is(":hidden")) {
+                $("#invoice_block").show();
+            } else {
+                $("#invoice_block").hide();
+            }
+        }
+        // 等 Document 完成載入的部份
+        $(function () {
+            $(".card-no").keyup(function (event) {
+                if (event.target.value.length === 4) {
+                    focusNextElement();
+                }
+            });
+
+            footer_height = 280;
+
+            function update_cart_list() {
+                local_cart = JSON.parse(localStorage.getItem("cart"));
+                remote_products = JSON.parse(localStorage.getItem("prod_info"));
+
+                $.each(local_cart, function (type, type_items) {
+                    $.each(type_items, function (pid, cnt) {
+                        if (remote_products[type][pid] == undefined) {
+                            // 如果商品不在了, 本地清除
+                            delete local_cart[type][pid];
+                        } else if (cnt > remote_products[type][pid].vol) {
+                            // 如果商品超過庫存, 本地減少
+                            local_cart[type][pid] = remote_products[type][pid].vol;
+                        }
+                    });
+                });
+                // 把 local_cart 再寫回確保更新有同步
+                localStorage.setItem("cart", JSON.stringify(local_cart));
+            }
+
+            function changearea(str = null, current_area = null) {
+                var elem = str.split("_");
+                $("#" + elem[0] + "_area option").remove();
+
+                //20191123 Darren 多國區域選單
+                if ($("#" + elem[0] + "_city").val() == 'Australian Capital Territory') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Canberra").text(
+                        "Canberra"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'New South Wales') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Albury").text(
+                        "Albury"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Armidale").text(
+                        "Armidale"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ballina").text(
+                        "Ballina"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Batemans Bay").text(
+                        "Batemans Bay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bathurst").text(
+                        "Bathurst"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bourke").text(
+                        "Bourke"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Broken Hill").text(
+                        "Broken Hill"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Byron Bay").text(
+                        "Byron Bay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Central Coast")
+                        .text("Central Coast"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Coffs Harbour")
+                        .text("Coffs Harbour"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cooma").text(
+                        "Cooma"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cowra").text(
+                        "Cowra"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Deniliquin").text(
+                        "Deniliquin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Dubbo").text(
+                        "Dubbo"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Forbes").text(
+                        "Forbes"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Forster-Tuncurry")
+                        .text("Forster-Tuncurry"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Goulburn").text(
+                        "Goulburn"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Grafton").text(
+                        "Grafton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Griffith").text(
+                        "Griffith"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gunnedah").text(
+                        "Gunnedah"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Inverell").text(
+                        "Inverell"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ivanhoe").text(
+                        "Ivanhoe"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Katoomba").text(
+                        "Katoomba"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kempsey").text(
+                        "Kempsey"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kiama").text(
+                        "Kiama"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Leeton").text(
+                        "Leeton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Lismore").text(
+                        "Lismore"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Lithgow").text(
+                        "Lithgow"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Maitland").text(
+                        "Maitland"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Merimbula").text(
+                        "Merimbula"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Moree").text(
+                        "Moree"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mudgee").text(
+                        "Mudgee"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Muswellbrook").text(
+                        "Muswellbrook"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Narrabri").text(
+                        "Narrabri"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Newcastle").text(
+                        "Newcastle"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Nowra").text(
+                        "Nowra"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Orange").text(
+                        "Orange"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Parkes").text(
+                        "Parkes"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Macquarie")
+                        .text("Port Macquarie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Queanbeyan").text(
+                        "Queanbeyan"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Richmond").text(
+                        "Richmond"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Scone").text(
+                        "Scone"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Singleton").text(
+                        "Singleton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Sydney").text(
+                        "Sydney"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Tamworth").text(
+                        "Tamworth"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Taree").text(
+                        "Taree"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Tumut").text(
+                        "Tumut"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Tweed Heads").text(
+                        "Tweed Heads"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ulladulla").text(
+                        "Ulladulla"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wagga Wagga").text(
+                        "Wagga Wagga"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wilcannia").text(
+                        "Wilcannia"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wollongong").text(
+                        "Wollongong"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Yamba").text(
+                        "Yamba"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Young").text(
+                        "Young"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'Northern Territory') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Adelaide River")
+                        .text("Adelaide River"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Alice Springs")
+                        .text("Alice Springs"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Darwin").text(
+                        "Darwin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Katherine").text(
+                        "Katherine"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "McMinns Lagoon")
+                        .text("McMinns Lagoon"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Pine Creek").text(
+                        "Pine Creek"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Yulara").text(
+                        "Yulara"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'Queensland') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Atherton").text(
+                        "Atherton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ayr").text("Ayr"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Barcaldine").text(
+                        "Barcaldine"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bedourie").text(
+                        "Bedourie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Biloela").text(
+                        "Biloela"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Birdsville").text(
+                        "Birdsville"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bongaree").text(
+                        "Bongaree"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Boulia").text(
+                        "Boulia"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bowen").text(
+                        "Bowen"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Brisbane").text(
+                        "Brisbane"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bundaberg").text(
+                        "Bundaberg"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Burketown").text(
+                        "Burketown"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Caboolture").text(
+                        "Caboolture"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cairns").text(
+                        "Cairns"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Caloundra").text(
+                        "Caloundra"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Camooweal").text(
+                        "Camooweal"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Charleville").text(
+                        "Charleville"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Charters Towers")
+                        .text("Charters Towers"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cloncurry").text(
+                        "Cloncurry"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Dalby").text(
+                        "Dalby"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Eidsvold").text(
+                        "Eidsvold"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Emerald").text(
+                        "Emerald"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Georgetown").text(
+                        "Georgetown"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gladstone").text(
+                        "Gladstone"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gold Coast").text(
+                        "Gold Coast"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Goondiwindi").text(
+                        "Goondiwindi"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gympie").text(
+                        "Gympie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Hervey Bay").text(
+                        "Hervey Bay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Hughenden").text(
+                        "Hughenden"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ingham").text(
+                        "Ingham"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Innisfail").text(
+                        "Innisfail"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Karumba").text(
+                        "Karumba"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kingaroy").text(
+                        "Kingaroy"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Longreach").text(
+                        "Longreach"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mackay").text(
+                        "Mackay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Maryborough").text(
+                        "Maryborough"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Moranbah").text(
+                        "Moranbah"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mount Isa").text(
+                        "Mount Isa"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Douglas").text(
+                        "Port Douglas"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Proserpine").text(
+                        "Proserpine"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Quilpie").text(
+                        "Quilpie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Richmond").text(
+                        "Richmond"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Rockhampton").text(
+                        "Rockhampton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Roma").text(
+                    "Roma"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Thargomindah").text(
+                        "Thargomindah"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Theodore").text(
+                        "Theodore"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Toowoomba").text(
+                        "Toowoomba"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Townsville").text(
+                        "Townsville"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Warwick").text(
+                        "Warwick"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Weipa").text(
+                        "Weipa"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Windorah").text(
+                        "Windorah"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Winton").text(
+                        "Winton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Yeppoon").text(
+                        "Yeppoon"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'South Australia') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Adelaide").text(
+                        "Adelaide"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Andamooka").text(
+                        "Andamooka"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Berri").text(
+                        "Berri"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bordertown").text(
+                        "Bordertown"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ceduna").text(
+                        "Ceduna"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Clare").text(
+                        "Clare"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cowell").text(
+                        "Cowell"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gawler").text(
+                        "Gawler"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kimba").text(
+                        "Kimba"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kingoonya").text(
+                        "Kingoonya"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value",
+                        "Kingston South East").text("Kingston South East"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Meningie").text(
+                        "Meningie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mount Gambier")
+                        .text("Mount Gambier"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Murray Bridge")
+                        .text("Murray Bridge"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Penola").text(
+                        "Penola"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Peterborough").text(
+                        "Peterborough"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Augusta").text(
+                        "Port Augusta"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Lincoln").text(
+                        "Port Lincoln"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Pirie").text(
+                        "Port Pirie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Streaky Bay").text(
+                        "Streaky Bay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Tumby Bay").text(
+                        "Tumby Bay"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Victor Harbor")
+                        .text("Victor Harbor"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wallaroo").text(
+                        "Wallaroo"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Whyalla").text(
+                        "Whyalla"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Woomera").text(
+                        "Woomera"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'Tasmania') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bicheno").text(
+                        "Bicheno"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Burnie").text(
+                        "Burnie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Devonport").text(
+                        "Devonport"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Hobart").text(
+                        "Hobart"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kingston").text(
+                        "Kingston"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Launceston").text(
+                        "Launceston"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Oatlands").text(
+                        "Oatlands"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Queenstown").text(
+                        "Queenstown"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Scottsdale").text(
+                        "Scottsdale"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Smithton").text(
+                        "Smithton"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'Victoria') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ararat").text(
+                        "Ararat"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bairnsdale").text(
+                        "Bairnsdale"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ballarat").text(
+                        "Ballarat"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bendigo").text(
+                        "Bendigo"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cobram").text(
+                        "Cobram"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Colac").text(
+                        "Colac"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Cranbourne").text(
+                        "Cranbourne"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Echuca").text(
+                        "Echuca"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Geelong").text(
+                        "Geelong"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Hamilton").text(
+                        "Hamilton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Horsham").text(
+                        "Horsham"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Maryborough").text(
+                        "Maryborough"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Melbourne").text(
+                        "Melbourne"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Melton").text(
+                        "Melton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mildura").text(
+                        "Mildura"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ouyen").text(
+                        "Ouyen"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Portland").text(
+                        "Portland"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Sale").text(
+                    "Sale"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Seymour").text(
+                        "Seymour"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Shepparton").text(
+                        "Shepparton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Stawell").text(
+                        "Stawell"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Sunbury").text(
+                        "Sunbury"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Swan Hill").text(
+                        "Swan Hill"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Traralgon").text(
+                        "Traralgon"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wangaratta").text(
+                        "Wangaratta"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Warrnambool").text(
+                        "Warrnambool"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wonthaggi").text(
+                        "Wonthaggi"));
+                }
+                if ($("#" + elem[0] + "_city").val() == 'Western Australia') {
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Albany").text(
+                        "Albany"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Broome").text(
+                        "Broome"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Bunbury").text(
+                        "Bunbury"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Busselton").text(
+                        "Busselton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Carnarvon").text(
+                        "Carnarvon"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Esperance").text(
+                        "Esperance"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Exmouth").text(
+                        "Exmouth"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Geraldton").text(
+                        "Geraldton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Gingin").text(
+                        "Gingin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Halls Creek").text(
+                        "Halls Creek"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kalbarri").text(
+                        "Kalbarri"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kalgoorlie").text(
+                        "Kalgoorlie"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Karratha").text(
+                        "Karratha"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Katanning").text(
+                        "Katanning"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kununurra").text(
+                        "Kununurra"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Kwinana").text(
+                        "Kwinana"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Laverton").text(
+                        "Laverton"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Leonara").text(
+                        "Leonara"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mandurah").text(
+                        "Mandurah"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Manjimup").text(
+                        "Manjimup"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Meekatharra").text(
+                        "Meekatharra"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Merredin").text(
+                        "Merredin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Morawa").text(
+                        "Morawa"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mount Barker").text(
+                        "Mount Barker"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Mount Magnet").text(
+                        "Mount Magnet"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Narrogin").text(
+                        "Narrogin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Newman").text(
+                        "Newman"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Norseman").text(
+                        "Norseman"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Northam").text(
+                        "Northam"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Onslow").text(
+                        "Onslow"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Pannawonica").text(
+                        "Pannawonica"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Perth").text(
+                        "Perth"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Denison").text(
+                        "Port Denison"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Port Hedland").text(
+                        "Port Hedland"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Ravensthorpe").text(
+                        "Ravensthorpe"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Roebourne").text(
+                        "Roebourne"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Southern Cross")
+                        .text("Southern Cross"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Three Springs")
+                        .text("Three Springs"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Tom Price").text(
+                        "Tom Price"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wagin").text(
+                        "Wagin"));
+                    $("#" + elem[0] + "_area").append($("<option></option>").attr("value", "Wyndham").text(
+                        "Wyndham"));
+                }
+
+                if ((elem[0] + "_area") == 'from_area') {
+                    $("#" + elem[0] + "_area").val('新店區');
+                } else {
+                    $("#" + elem[0] + "_area").val('');
+                }
+
+                // i = $("#" + elem[0] + "_city").prop('selectedIndex');
+                // length = cityarea_account[i] - cityarea_account[i - 1];
+                // index = cityarea_account[i - 1] + 1;
+                // for (j = 0; j < length; j++) {
+                //     if (current_area == cityarea[index + j]) {
+                //         $("#" + elem[0] + "_area").append($("<option></option>").attr("value", cityarea[index + j]).attr("selected", true).text(cityarea[index + j]));
+                //     } else {
+                //         $("#" + elem[0] + "_area").append($("<option></option>").attr("value", cityarea[index + j]).text(cityarea[index + j]));
+                //     }
+                // }
+                // if (!current_area) {
+                //     $("#" + elem[0] + "_area option:eq(0)").prop('selected', true);
+                // }
+            }
+
+            function check_cart() {
+                local_cart = JSON.parse(localStorage.getItem("cart"));
+
+                var g_size = (local_cart != null && 'g' in local_cart) ? Object.keys(local_cart['g']).length :
+                0;
+                var t_size = (local_cart != null && 't' in local_cart) ? Object.keys(local_cart['t']).length :
+                0;
+
+                if (local_cart == null || (g_size + t_size) < 1) {
+                    $("#cart_list").height($(window).height() - 248);
+                    $("#cart_list").html('<center><br><br><br><br>尚無購買商品，請先選購商品加入購物車！</center>');
+                    $("#order_info").remove();
+                    $("#coupon_sn_encode").remove();
+                    return false;
+                }
+
+                $.ajax({
+                    url: '/ezpretty/shop/check_cart/',
+                    // headers: {
+                    //   'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'),
+                    // },
+                    type: 'POST',
+                    dataType: "json",
+                    data: {
+                        cart: JSON.stringify(local_cart)
+                    },
+
+                    success: function (data) {
+                        if (data.status == 0) {
+                            console.log('錯誤');
+                        } else {
+                            // 要把 remote goods 寫到本地暫時操作使用
+                            localStorage.setItem("prod_info", JSON.stringify(data.remote_products));
+                            localStorage.setItem("all_tickets", JSON.stringify(data.all_tickets));
+
+                            update_cart_num();
+
+                        }
+                    }
+                });
+            }
+
+            $("#invoice_type_2").click(function () {
+                $("#tax_id").val('');
+                $("#tax_title").val('');
+                $("#tax_id_field").hide();
+                $("#tax_title_field").hide();
+            });
+            $("#invoice_type_3").click(function () {
+                $("#tax_id_field").show();
+                $("#tax_title_field").show();
+            });
+            $("#show_agreement").click(function () {
+                $('#agreement_modal').modal('show');
+            });
+
+            $("#submit_order").click(function () {
+                // 防連點
+                if ($("#submit_order").html() == '訂單處理中..') return false;
+                var browserInfo = browser(navigator.userAgent);
+                $("#payment_alert").html('').hide();
+
+                if (!$("#confirm_order").prop("checked")) {
+                    $("#payment_alert").html('請同意使用規範!').show();
+                    return false;
+                }
+
+                if ($("#shop_pay_method_bonus").prop("checked") && total_cost_bonus_fee > 0) {
+                    if (22901 < total_cost_bonus_fee) {
+                        $("#payment_alert").html('您的紅利金不足').show();
+                        return false;
+                    }
+                };
+
+                if ($('#shop_take_goods').val() == 1) {
+                    // 購買者自訂
+                    if ($('#from_name').val().length < 1 || $('#from_city').val().length < 1 ||
+                        $('#from_phone').val().length < 1 || $('#from_address').val().length < 1 ||
+                        (!$('#from_area').val() || $('#from_area').val().length < 1)) {
+                        $("#payment_alert").html('寄件人資料所有欄位都需填寫!').show();
+                        return false;
+                    }
+                    if ($('#to_name').val().length < 1 || $('#to_city').val().length < 1 ||
+                        $('#to_phone').val().length < 1 || $('#to_address').val().length < 1 ||
+                        (!$('#to_area').val() || $('#to_area').val().length < 1)) {
+                        $("#payment_alert").html('收件人資料所有欄位都需填寫!').show();
+                        return false;
+                    }
+                } else if ($('#shop_take_goods').val() == 2) {
+                    // 取貨地點
+                    if ($('#from_name').val().length < 1 || $('#from_phone').val().length < 1 || $(
+                            '#from_city').val().length < 1 || $('#from_address').val().length < 1 || $(
+                            '#from_area').val().length < 1) {
+                        $("#payment_alert").html('訂單資料所有欄位都需填寫!').show();
+                        return false;
+                    }
+                }
+
+                if ($("#invoice_type_3").is(":checked") && ($('#tax_id').val().length < 1 || $(
+                        '#tax_title').val().length < 1)) {
+                    $("#payment_alert").html('發票資料欄位需填寫!').show();
+                    return false;
+                }
+
+                if (total_cost_calculate > 0) {
+                    if ($('[name=pay_method_id]:checked').val() == 1 &&
+                        ($('#card_no1').val().length < 1 || $('#card_no2').val().length < 1 || $(
+                            '#card_no3').val().length < 1 || $('#card_no2').val().length < 1 || $(
+                            '#card_back_3d').val().length < 1)) {
+                        $("#payment_alert").html('請確定信用卡資訊填寫完全喔．').show();
+                        return false;
+                    }
+
+                    if ($('[name=pay_method_id]:checked').val() == 2 && $('#shop_pay_atm_return_5')
+                        .val() == 1 &&
+                        $('#transfer_5').val().length != 5) {
+                        $("#payment_alert").html('請填寫已匯款後5碼喔').show();
+                        return false;
+                    }
+                }
+
+                var take_good_method = $('[name=take_good_method]:checked').val();
+                if (take_good_method == 2 &&
+                    ($('#to_store_no').val().length < 1 || $('#to_store_name').val().length < 1 || $(
+                        '#CargoFlag').val().length < 1)
+                ) {
+                    $("#payment_alert").html('請選擇取貨門市').show();
+                    return false;
+                }
+
+                local_cart = JSON.parse(localStorage.getItem("cart"));
+                if (!local_cart['g'] && !local_cart['t']) {
+                    return false;
+                }
+
+                // 設一下避免連點
+                $("#submit_order").html('訂單處理中..');
+
+                if (local_cart['g']) {
+                    goodString = '&' + Object.keys(local_cart['g']).map(key => 'goods[' + key + ']=' +
+                        local_cart['g'][key]).join('&');
+                }
+                if (local_cart['t']) {
+                    ticketString = '&' + Object.keys(local_cart['t']).map(key => 'tickets[' + key +
+                        ']=' + local_cart['t'][key]).join('&');
+                }
+                var couponString = '&coupon_sn_encode=' + coupon_sn_encode;
+                couponString += '&coupon_discount=' + coupon_discount;
+
+                formdata = $("#order_form").serialize() + goodString + ticketString + couponString +
+                    '&browser=' + browserInfo;
+                $.ajax({
+                    url: '/ezpretty/shop/payment/',
+                    // headers: {
+                    //   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    // },
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        form: formdata
+                    },
+                    success: function (data) {
+                        window.setTimeout(function () {
+                            $('#loadingModal').modal('hide');
+                        }, 500);
+                        if (data.status === 0) {
+                            var pay_method_id = $('[name=pay_method_id]:checked').val();
+                            local_cart = {
+                                'g': {},
+                                't': {}
+                            };
+                            localStorage.setItem("cart", JSON.stringify(local_cart));
+                            update_cart_num();
+                            $("#order_info").remove();
+                            $("#order_total_money").remove();
+                            if (take_good_method == 2) {
+                                var postForm = $('<form   method="post" action="' + data
+                                    .sendStore.url + '">' +
+                                    '<input type="hidden" name="web" value="' + data
+                                    .sendStore.web + '"/>' +
+                                    '<input type="hidden" name="MN" value="' + data
+                                    .sendStore.MN + '"/>' +
+                                    // '<input type="hidden" name="OrderInfo" value=""/>'+
+                                    '<input type="hidden" name="sna" value="' + data
+                                    .sendStore.sna + '"/>' +
+                                    '<input type="hidden" name="sdt" value="' + data
+                                    .sendStore.sdt + '"/>' +
+                                    '<input type="hidden" name="CargoFlag" value="' +
+                                    data.sendStore.CargoFlag + '"/>' +
+                                    '<input type="hidden" name="StoreID" value="' + data
+                                    .sendStore.StoreID + '"/>' +
+                                    '<input type="hidden" name="StoreName" value="' +
+                                    data.sendStore.StoreName + '"/>' +
+                                    '<input type="hidden" name="ChkValue" value="' +
+                                    data.sendStore.ChkValue + '"/>' +
+                                    '<input type="hidden" name="note1" value="' + data
+                                    .sendStore.shopOrderId + '"/>' +
+                                    '</form>');
+                                $("body").append(postForm);
+                                postForm.submit().remove();
+                            }
+
+                            if (pay_method_id == 5) {
+                                if (isMobileDevice()) {
+                                    if (data.linepayLink.app) {
+                                        location.href = data.linepayLink.app;
+                                    }
+                                } else {
+                                    if (data.linepayLink.web) {
+                                        location.href = data.linepayLink.web;
+                                    }
+                                }
+                                return false;
+                            }
+
+                            $("#coupon_sn_encode").hide();
+
+                            $("#payment_result").html(
+                                '<br><div class="alert alert-success" role="alert">' +
+                                data.messages + '</div>').show();
+
+                            window.setTimeout(function () {
+                                window.location = '/ezpretty/shop/records';
+                            }, 1000);
+                        } else if (data.status === 1) {
+                            $("#payment_alert").html('商品數量因庫存有所調整，請再次確認!').show();
+                            $("#submit_order").html('確認訂購');
+                        } else {
+                            $("#payment_alert").html('錯誤: ' + data.messages).show();
+                            $("#submit_order").html('確認訂購');
+                        }
+                    },
+                    error: function (data) {
+                        $('#loadingModal').modal('hide');
+                        $("#payment_alert").html('錯誤: 系統異常請稍候再試!').show();
+                        $("#submit_order").html('確認訂購');
+                    },
+                    beforeSend: function () {
+                        $('#loadingModal').modal('show');
+                        $('#loadingMessage').html('訂單處理中請稍後.....');
+                    },
+                });
+            });
+            $("#same_as_from").on("click", function () {
+                $("#to_name").val($("#from_name").val());
+                if ($("#to_name").val().length > 10) $("#to_name").val($("#to_name").val().substr(0,
+                    10));
+                $("#to_phone").val($("#from_phone").val());
+                $("#to_address").val($("#from_address").val());
+                $("#to_city").val($("#from_city").val());
+                changearea('to_city');
+                $("#to_area").val($("#from_area").val());
+            });
+            $("[id$=_city]").change(function () {
+                changearea($(this).attr("id"));
+            });
+
+            $("#hook_modal").modal('show');
+
+            check_cart();
+
+            chkshop_pay_method();
+            changearea('from_city');
+            changearea('to_city');
+        });
+
+        function isMobileDevice() {
+            const mobileDevice = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
+            let isMobileDevice = mobileDevice.some(e => navigator.userAgent.match(e))
+            return isMobileDevice;
+        }
+        // function sendStoreCashDelivery(shopOrderId){
+        //     $.ajax({
+        //         url: '/sunship/sendStoreCashDelivery/',
+        //         // headers: {
+        //         //   'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'),
+        //         // },
+        //         type: 'POST',
+        //         dataType: "json",
+        //         data: {
+        //             shopOrderId: shopOrderId
+        //         },
+        //         success: function(data) {
+        //             var postForm = $('<form   method="post" action="'+data.url+'">'+
+        //                         '<input type="hidden" name="web" value="'+data.web+'"/>'+
+        //                         '<input type="hidden" name="MN" value="'+data.MN+'"/>'+
+        //                         // '<input type="hidden" name="OrderInfo" value=""/>'+
+        //                         '<input type="hidden" name="sna" value="'+data.sna+'"/>'+
+        //                         '<input type="hidden" name="sdt" value="'+data.sdt+'"/>'+
+        //                         '<input type="hidden" name="CargoFlag" value="'+data.CargoFlag+'"/>'+
+        //                         '<input type="hidden" name="StoreID" value="'+data.StoreID+'"/>'+
+        //                         '<input type="hidden" name="StoreName" value="'+data.StoreName+'"/>'+
+        //                         '<input type="hidden" name="ChkValue" value="'+data.ChkValue+'"/>'+
+        //                         '<input type="hidden" name="note1" value="'+shopOrderId+'"/>'+
+        //                         '</form>');
+        //             $("body").append(postForm);
+        //             postForm.submit().remove();
+        //         }
+        //     });
+        //     // var dummy = new iframeform('https://test.esafe.com.tw/Service/Etopm.aspx');
+        //     // dummy.addParameter('type','test');
+        //     // dummy.addParameter('message','Works...');
+        //     // dummy.send();
+        // }
+        function select_store(store) {
+            $.ajax({
+                url: '/sunship/sendEsafeSelectStore/',
+                // headers: {
+                //   'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'),
+                // },
+                type: 'POST',
+                dataType: "json",
+                data: {
+                    coupon_sn_encode: $("#coupon_sn_encode").val(),
+                    from_name: $("#from_name").val(),
+                    from_phone: $("#from_phone").val(),
+                    from_city: $("#from_city").val(),
+                    from_area: $("#from_area").val(),
+                    from_address: $("#from_address").val(),
+                    to_name: $("#to_name").val(),
+                    to_phone: $("#to_phone").val(),
+                    to_city: $("#to_city").val(),
+                    to_area: $("#to_area").val(),
+                    to_address: $("#to_address").val(),
+                    to_store_no: $("#to_store_no").val(),
+                    to_store_name: $("#to_store_name").val(),
+                    invoice_type_2: $("#invoice_type_2").val(),
+                    invoice_type_3: $("#invoice_type_3").val(),
+                    tax_title: $("#tax_title").val(),
+                    tax_id: $("#tax_id").val(),
+                    CargoFlag: store,
+                    userId: '769',
+                },
+                success: function (data) {
+                    var postForm = $('<form   method="post" action="' + data.link + '">' +
+                        '<input type="hidden" name="web" value="' + data.web + '"/>' +
+                        '<input type="hidden" name="CargoFlag" value="' + store + '"/>' +
+                        '<input type="hidden" name="OrderID" value="' + data.OrderID + '"/>' +
+                        '<input type="hidden" name="ReturnURL" value="' + data.ReturnURL + '"/>' +
+                        '<input type="hidden" name="ChkValue" value="' + data.ChkValue + '"/>' +
+                        '</form>');
+                    $("body").append(postForm);
+                    postForm.submit().remove();
+                }
+            });
+        }
+
+        function iframeform(url) {
+            var object = this;
+            object.time = new Date().getTime();
+            object.form = $('<form action="' + url + '" target="iframe' + object.time +
+                '" method="post" style="display:none;" id="form' + object.time + '"></form>');
+            object.addParameter = function (parameter, value) {
+                $("<input type='hidden' />")
+                    .attr("name", parameter)
+                    .attr("value", value)
+                    .appendTo(object.form);
+            }
+            object.send = function () {
+                var iframe = $('<iframe data-time="' + object.time + '" style="display:none;" id="iframe' + object
+                    .time + '"></iframe>');
+                $("body").append(iframe);
+                $("body").append(object.form);
+                object.form.submit();
+                iframe.load(function () {
+                    $('#form' + $(this).data('time')).remove();
+                    $(this).remove();
+                });
+            }
+        }
+
+        function QRCode(content, width, height) {
+            // 預設寬高為 120x120
+            width = !!width ? width : 120;
+            height = !!height ? height : 120;
+            // 編碼
+            content = encodeURIComponent(content);
+            return 'https://chart.apis.google.com/chart?cht=qr&chl=' + content + '&chs=' + width + 'x' + height;
+        }
+
+        $(function () {
+            var FBSrc = QRCode('https://www.ezpretty.com.tw/ezpretty/messenger/agreePage/0/769', 132, 132);
+            $("#qrContent").html('<img src="' + FBSrc + '" alt="" />');
+
+            var LINESrc = QRCode(
+                'https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1575992158&redirect_uri=https%3A%2F%2Fshop.ezpretty.com.tw%2Fezpretty%2Fline%2FloginCallback&state=shopUser769&scope=profile&bot_prompt=aggressive',
+                132, 132);
+            $("#qrContent_line").html('<img src="' + LINESrc + '" alt="" />');
+        });
+
+        // if (typeof(shopchannel) == 'undefined') {
+        //     var pusher = new Pusher('8349aa96975f515f831d', {
+        //         encrypted: true
+        //     });
+        //     Pusher.log = function(message) {
+        //         if (window.console && window.console.log) {
+        //             // window.console.log(message);
+        //         }
+        //     };
+        //     var shopchannel = pusher.subscribe('shop769');
+        // }
+        // shopchannel.bind('shopSelectStore', function(data) {
+        //     $("#to_store_no").val(data.StoreID);
+        //     $("#to_store_name").val(data.StoreName);
+        //     $("#CargoFlag").val(data.CargoFlag);
+        // });
+    </script>
+    <script src="./168微商城_files/common.js" type="text/javascript"></script>
+    <script src="./168微商城_files/bootstrap.4.1.3.min.js" type="text/javascript"></script>
+    <script defer="" src="./168微商城_files/beacon.min.js"
+        data-cf-beacon="{&quot;rayId&quot;:&quot;654bd0d81ed142cc&quot;,&quot;token&quot;:&quot;2615bef421f14f1a9cbbbea78b62d3fe&quot;,&quot;version&quot;:&quot;2021.5.1&quot;,&quot;si&quot;:10}">
+    </script>
+
+
+    <script src="./168微商城_files/enable_plugin.php" defer=""></script>
+    <script src="./168微商城_files/enable_plugin.php" defer=""></script>
+</body>
+
+</html>
